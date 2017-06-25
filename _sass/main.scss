@@ -1,0 +1,12 @@
+@charset "utf-8";
+@import 'base',
+		'flexboxgrid.min.css', 
+		'syntax-highlighting';
+
+@import url(http://weloveiconfonts.com/api/?family=fontawesome);
+
+/* fontawesome */
+[class*="fontawesome-"]:before {
+  font-family: 'FontAwesome', sans-serif;
+}
+
