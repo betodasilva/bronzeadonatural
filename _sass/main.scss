@@ -10,4 +10,36 @@
 
 body {
 	font-family: 'Poppins', sans-serif;
+
+	a, a:hover { text-decoration: none; }
+}
+
+.wrapper {
+	padding: 1.25em;
+}
+
+.site-header {
+	background-color: #545454;
+}
+
+.nav-links {
+	word-spacing: 5px;
+
+	> a {
+	color: #fff;
+
+		&:not(:last-child):after {
+			content: "";
+			display: inline-block;
+			vertical-align: middle;
+			width: 1px;
+			height: 1em;
+			background-color: #fff;
+			margin-left: 10px;
+			// margin-right: 5px;
+		}
+
+
+	}
+
 }

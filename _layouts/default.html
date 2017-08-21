@@ -4,10 +4,20 @@
   {% include head.html %}
 
   <body>
-
-    {% include header.html %}
+    
 
     <main class="page-content" aria-label="Content">
+      <section class="hero">
+          {% include header.html %}     
+          <div class="logo"></div>
+          <div class="phrases">
+            <div><h4>Marcas Impecáveis</h4></div>
+            <div><h4>Resultado Duradouro.</h4></div>
+            <div><h4>Sessões de 120min</h4></div>
+            <div><h4>Bronzeamento Saudável</h4></div>
+          </div>
+          <div class="btn btn-arrow"></div>
+      </section>
       <div class="wrapper">
         {{ content }}
       </div>
