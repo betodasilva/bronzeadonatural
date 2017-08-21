@@ -12,6 +12,10 @@ body {
 	font-family: 'Poppins', sans-serif;
 }
 
+.container {
+	margin: 0 auto;
+}
+
 a, a:hover { text-decoration: none; }
 
 img {
@@ -181,4 +185,12 @@ img {
 	margin: 1.25em auto;
 	height: 1px;
 	background: #848484;
+}
+
+.gallery {
+	> div {
+		margin-bottom: 20px;
+		padding-right: .5rem;
+		padding-left: .5rem;
+	}
 }
