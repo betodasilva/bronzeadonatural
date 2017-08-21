@@ -24,23 +24,70 @@ img {
 	padding: 1.25em;
 }
 
-.hero {
-	min-height: 90vh;
-	height: 90vh;
-	background: rgba(0,0,0, 0.2);
-}
-
-.logo {
-	width: 220px;
-	margin: 0 auto;
-}
-
 .site-header {
 	background-color: #545454;
 }
 
+.hero {
+	position: relative;
+	min-height: 90vh;
+	height: 90vh;
+	background: url('/assets/images/hero-image.jpg') no-repeat center;
+	background-size: cover;
+	&:after {
+		content: "";
+		position: absolute;
+		top: 0; right: 0;
+		left: 0; bottom: 0;
+		background: rgba(0,0,0, 0.4);
+
+	}
+}
+
+.site-header, .logo, .phrases {
+	z-index: 99;
+}
+
+.logo {
+	width: 180px;
+	margin: 20px auto;
+}
+
+.phrases {
+	display: flex;
+	flex-wrap: wrap;
+	position: relative;
+	top: 100px;
+	> div {
+		flex: 1 0 50%;
+		height: 50px;
+		color: #fff;
+	}
+	
+	> div > h4 {
+		font-weight: 300;
+		text-transform: uppercase;
+		font-size: 1.6em;
+		position: relative;
+		&:before {
+			content: '';
+			display: block;
+			position: absolute;
+			left: 0;
+			bottom: 0;
+			width: 10%;
+			height: 1px;
+			background: #fff;
+			margin-top: 5px;
+		}
+	}
+}
+
+
+
 .nav-links {
 	word-spacing: 5px;
+	z-index: 99;
 
 	> a {
 	color: #fff;
