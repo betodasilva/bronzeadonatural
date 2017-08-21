@@ -1,6 +1,5 @@
 @charset "utf-8";
-@import 'base',
-		'flexboxgrid.min.css';
+@import "base";
 
 @import url(http://weloveiconfonts.com/api/?family=fontawesome);
 
@@ -10,6 +9,5 @@
 }
 
 body {
-	background-color: blue;
+	font-family: 'Poppins', sans-serif;
 }
-
