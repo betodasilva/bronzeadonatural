@@ -64,6 +64,8 @@ img {
 	vertical-align: middle;
 }
 
+
+
 .hero-wrapper {
 	height: 80vh;
 }
@@ -95,7 +97,7 @@ img {
 	min-height: 90vh;
 	height: 90vh;
 	margin-bottom: 1.414em;
-	background: url('/bronzeadonatural/assets/images/hero-image.jpg') no-repeat center;
+	background: url('/assets/images/hero-image.jpg') no-repeat center;
 	background-size: cover;
 	&:before {
 		content:"";
@@ -132,7 +134,7 @@ img {
 .simbolo {
 	width: 60px;
 	display: none;
-	margin-right: 5px;
+	margin-right: 30px;
 	&.visible { display: inline-block; }
 }
 
@@ -182,10 +184,35 @@ img {
 .whatsapp {
 	color: #fff;
 	z-index: 99;
-	>.text { color: #25D366; }
+	margin-top: -5px;
+	>.text { color: #9dff1b; }
+	>.number { font-weight: 700; }
+	>.separator {
+		display: inline-block;
+		margin-left: 5px;
+		margin-right: 5px;
+		height: 20px;
+		vertical-align: text-bottom;
+		width: 1px;
+		background: #fff;
+	}
+	
 	@media (max-width: 480px) {
 		display: none;
 	}
+}
+
+.icon {
+	display: inline-block;
+	width: 24px;
+	height: 24px;
+	vertical-align: middle;
+}
+
+.icon-whatsapp {
+	background: url('/assets/images/whatsapp.png') no-repeat;
+	vertical-align: text-bottom;
+	
 }
 
 @media (max-width: 480px) {
