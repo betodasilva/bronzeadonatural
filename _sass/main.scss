@@ -20,7 +20,9 @@ $grad2: #FC4A1A;
 	color: $orange;
 	margin-right: 5px;
 }
-
+@media (max-width: 480px) {
+	.row { margin-left: 0 !important; margin-right: 0 !important; }
+}
 html { font-size: 1em; }
 
 p { margin-bottom: 1.3em; &.no-margin {margin: 0;} }
@@ -320,6 +322,12 @@ img {
 		margin-bottom: 20px;
 		padding-right: .5rem;
 		padding-left: .5rem;
+	}
+}
+
+.gallery-instagram > div > img {
+	@media (max-width: 480px) {
+		width: 100%;
 	}
 }
 
