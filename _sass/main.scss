@@ -64,7 +64,9 @@ img {
 	vertical-align: middle;
 }
 
-
+.page-content {
+	background: lightgoldenrodyellow;
+}
 
 .hero-wrapper {
 	height: 80vh;
@@ -373,6 +375,7 @@ img {
 		padding-right: .5rem;
 		padding-left: .5rem;
 		line-height: 2.4;
+		background: lightyellow;
 	}
 
 	> textarea {
