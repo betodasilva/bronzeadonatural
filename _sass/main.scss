@@ -1,7 +1,7 @@
 @charset "utf-8";
 @import "base";
 
-@import url(http://weloveiconfonts.com/api/?family=fontawesome);
+// @import url(http://weloveiconfonts.com/api/?family=fontawesome);
 
 $orange: #F7B733;
 $yellow: #FBE15D;
@@ -60,13 +60,21 @@ img {
 	vertical-align: middle;
 }
 
-.wrapper {
-	max-width: 1080px;
-	margin: 0 auto;
+.hero-wrapper {
+	height: 80vh;
 }
 
 .site-header {
 	background-color: transparent;
+	&.fixed {
+		background-color: #009cb0;
+		position: fixed;
+		width: 100%;
+	}
+}
+
+.hero-overlay {
+	background: linear-gradient(to bottom, $grad1, $grad2);
 }
 
 .hero {
@@ -76,6 +84,15 @@ img {
 	margin-bottom: 1.414em;
 	background: url('/assets/images/hero-image.jpg') no-repeat center;
 	background-size: cover;
+	&:before {
+		content:"";
+		position: absolute;
+		top: 0; right: 0;
+		bottom: 0; left: 0;
+		background: linear-gradient(to bottom, $grad1, $grad2);
+		z-index: 2;
+		opacity: .2;
+	}
 	&:after {
 		content: "";
 		position: absolute;
@@ -95,11 +112,16 @@ img {
 	margin: 20px auto;
 }
 
+.phrases-container {
+	position: relative;
+	top: -60px;
+	align-self: baseline;
+}
+
 .phrases {
 	display: flex;
 	flex-wrap: wrap;
 	position: relative;
-	top: 60px;
 	> div {
 		flex: 1 0 50%;
 		height: 50px;
@@ -110,6 +132,7 @@ img {
 		font-weight: 300;
 		text-transform: uppercase;
 		font-size: 1.6em;
+		margin: 0;
 		position: relative;
 		&:before {
 			content: '';
@@ -126,6 +149,11 @@ img {
 }
 
 
+.whatsapp {
+	color: #fff;
+	z-index: 99;
+	>.text { color: #25D366; }
+}
 
 .nav-links {
 	word-spacing: 5px;
@@ -153,7 +181,7 @@ img {
 
 .arrow {
   position: absolute;
-  bottom: 10px;
+  bottom: 1.141em;
   left: 50%;
   margin-left:-20px;
   width: 40px;
@@ -224,6 +252,14 @@ img {
 	margin: 1.414em auto 0;
 	height: 1px;
 	background: #848484;
+}
+
+
+.short{
+	&:nth-child(2) {
+		position: relative;
+		top: 10px;
+	}
 }
 
 .gallery {
