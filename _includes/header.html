@@ -1,6 +1,6 @@
 <header class="site-header" role="banner">
 
-  <div class="wrapper">
+  <div class="container-fluid">
     {% assign default_paths = site.pages | map: "path" %}
     {% assign page_paths = site.header_pages | default: default_paths %}
   
@@ -16,8 +16,11 @@
             </svg>
           </span>
         </label>
-
-        <div class="nav-links end-xs col-xs-12">
+        <div class="whatsapp col-xs-4">
+          <span>91 9 8998-9888</span>
+          <span class="text font_small">Atendimento imediato!</span>
+        </div>
+        <div class="nav-links col-xs-8 end-xs">
           <a href="/">Início</a>
           <a href="#serviços">Serviços</a>
           <a href="#como-funciona">Como Funciona?</a>
