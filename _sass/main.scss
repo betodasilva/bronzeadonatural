@@ -3,9 +3,20 @@
 
 @import url(http://weloveiconfonts.com/api/?family=fontawesome);
 
+$orange: #F7B733;
+$yellow: #FBE15D;
+
+$grad1: #F7B733;
+$grad2: #FC4A1A;
+
 /* fontawesome */
 [class*="fontawesome-"]:before {
   font-family: 'FontAwesome', sans-serif;
+}
+
+.icon-big {
+	color: $orange;
+	margin-right: 5px;
 }
 
 html { font-size: 1em; }
@@ -62,6 +73,7 @@ img {
 	position: relative;
 	min-height: 90vh;
 	height: 90vh;
+	margin-bottom: 1.414em;
 	background: url('/assets/images/hero-image.jpg') no-repeat center;
 	background-size: cover;
 	&:after {
@@ -200,12 +212,11 @@ img {
 
 .title {
 
-	&.regular {
-		font-weight: 400;
-	}
-	&.bold {
-		font-weight: 700;
-	}
+	&.regular { font-weight: 400; }
+	&.medium { font-weight: 500; }
+	&.bold { font-weight: 700; }
+
+	&.orange { color: $orange; }
 }
 
 .separator {
