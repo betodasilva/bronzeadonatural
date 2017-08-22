@@ -50,3 +50,18 @@ $(function(){
       }
     });
 });
+
+$(function(){
+    var btn = $('#nav-btn'),
+        nav = $('.site-nav'),
+        links = $('.nav-links a');
+
+
+    btn.click(function(){
+        nav.toggleClass('site-nav-open');
+    });
+
+    links.click(function(){
+        nav.toggleClass('site-nav-open');
+    });
+});
