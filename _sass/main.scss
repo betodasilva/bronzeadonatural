@@ -340,10 +340,21 @@ img {
 
 
 .short{
-	&:nth-child(2) {
+	&:nth-child(3) {
 		position: relative;
 		top: 10px;
 	}
+}
+
+.lista-inicial {
+	list-style: initial;
+	display: inline-block;
+    list-style-position: inside;
+}
+
+p.observacoes {
+	margin: 0;
+	margin-top: 1.414em;
 }
 
 .gallery {
