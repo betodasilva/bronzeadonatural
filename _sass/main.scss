@@ -365,6 +365,8 @@ p.observacoes {
 	}
 }
 
+.gallery-photos { max-width: 100%; }
+
 .gallery-instagram > div > img {
 	@media (max-width: 480px) {
 		width: 100%;
