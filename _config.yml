@@ -34,5 +34,5 @@ exclude:
 
 
 collections: 
-  galeria:
+  galleries:
     title: Galeria

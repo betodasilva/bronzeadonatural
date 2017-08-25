@@ -1,4 +1,4 @@
-{% for galeria in site.galeria %}
+{% for galeria in site.galleries %}
     <div class="col-sm-6">
         <img src="{{galeria.image}}">
     </div>
