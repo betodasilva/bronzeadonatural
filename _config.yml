@@ -36,3 +36,5 @@ exclude:
 collections: 
   galleries:
     title: Galeria
+  videos:
+    title: Videos
