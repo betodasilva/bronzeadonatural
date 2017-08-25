@@ -113,6 +113,12 @@
     content: '←';
 }
 
+@media (max-width: 480px) {
+    .slick-prev, .slick-next {z-index: 999;}
+    .slick-prev { left: 0; }
+    .slick-next { right: 15px; }
+}
+
 /* Dots */
 .slick-dotted.slick-slider
 {
