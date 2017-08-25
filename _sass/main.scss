@@ -34,8 +34,8 @@ h1, h2, h3, h4 {
 }
 
 h1 {
-  margin-top: 0;
   font-size: 2.441em;
+  margin-bottom: 1.414em;
 }
 
 h2 {font-size: 1.953em;}
@@ -263,7 +263,7 @@ img {
 
 }
 
-.arrow {
+.arrow-bounce {
   position: absolute;
   bottom: 1.141em;
   left: 50%;
@@ -276,11 +276,11 @@ img {
 }
 
 .bounce {
-  -webkit-animation: bounce 2s infinite;
-  animation: bounce 2s infinite;
+  -webkit-animation: btn-bounce 2s infinite;
+  animation: btn-bounce 2s infinite;
 }
 
-@-webkit-keyframes bounce {
+@-webkit-keyframes btn-bounce {
 	0%, 20%, 50%, 80%, 100% {
     -webkit-transform: translateY(0);
     transform: translateX(0);
@@ -295,7 +295,7 @@ img {
   }
 }
 
-@-moz-keyframes bounce {
+@-moz-keyframes btn-bounce {
 	0%, 20%, 50%, 80%, 100% {
     transform: translateY(0);
   }
@@ -307,7 +307,7 @@ img {
   }
 }
 
-@keyframes bounce {
+@keyframes btn-bounce {
 	0%, 20%, 50%, 80%, 100% {
     -ms-transform: translateY(0);
     transform: translateY(0);
@@ -329,11 +329,14 @@ img {
 	&.bold { font-weight: 700; }
 
 	&.orange { color: $orange; }
+	&.m-bottom {
+		margin-bottom: 1.414em;
+	}
 }
 
-.separator {
+.hor-separator {
 	max-width: 320px;
-	margin: 1.414em auto 0;
+	margin: 4.414em auto 0;
 	height: 1px;
 	background: #848484;
 }
@@ -357,15 +360,26 @@ p.observacoes {
 	margin-top: 1.414em;
 }
 
-.gallery {
-	// > div {
-	// 	margin-bottom: 20px;
-	// 	padding-right: .5rem;
-	// 	padding-left: .5rem;
-	// }
+.section-margin {
+	margin-top: 2.414em;
+	margin-bottom: 1.5em;
 }
 
-.gallery-photos { max-width: 100%; }
+.gallery-photos { 
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: flex;
+    -ms-flex: 0 1 auto;
+    -webkit-box-flex: 0;
+    flex: 0 1 auto;
+    -ms-flex-direction: row;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    flex-direction: row;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+	max-width: 100%; 
+}
 
 .gallery-instagram > div > img {
 	@media (max-width: 480px) {
@@ -400,7 +414,6 @@ p.observacoes {
 .footer {
 	background: $yellow;
 	padding-top: 1.3em;
-	margin-top: 3em;
 }
 
 .hamburguer {
@@ -444,4 +457,8 @@ p.observacoes {
 	@media (min-width: 500px) {
 		display: none;
 	}
+}
+
+.contato {
+	padding-bottom: 3em;
 }
