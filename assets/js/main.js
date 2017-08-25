@@ -65,3 +65,7 @@ $(function(){
         nav.toggleClass('site-nav-open');
     });
 });
+
+$(function(){
+    baguetteBox.run('.gallery-photos');
+});

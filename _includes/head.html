@@ -7,6 +7,7 @@
   <meta name="description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
 
   <link rel="stylesheet" href="{{ '/assets/main.css' | prepend: site.baseurl }}">
+  <link rel="stylesheet" href="{{ '/assets/baguetteBox.min.css' | prepend: site.baseurl }}">
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
   <link rel="alternate" type="application/rss+xml" title="{{ site.title | escape }}" href="{{ "/feed.xml" | relative_url }}">
 
@@ -15,6 +16,7 @@
 
   <!-- JavaScript -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="{{'/assets/js/baguetteBox.min.js' | prepend: site.baseurl }}" async></script>
   <script src="{{'/assets/js/main.js' | prepend: site.baseurl }}"></script>
   
   {% if jekyll.environment == 'production' and site.google_analytics %}
