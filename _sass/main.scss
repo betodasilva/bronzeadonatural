@@ -234,7 +234,7 @@ img {
 	
 }
 
-@media (max-width: 480px) {
+@media (max-width: 656px) {
 	.site-nav-open {
 		position: fixed;
 		top: 0; left: 0; right: 0; bottom: 0;
@@ -278,7 +278,7 @@ img {
 
 	}
 
-	@media (max-width: 480px) {
+	@media (max-width: 656px) {
 		display: none;
 		> a { 
 			display: block;
@@ -493,7 +493,7 @@ p.observacoes {
 		&:nth-child(3) { top: 16px; }
 	}
 
-	@media (min-width: 500px) {
+	@media (min-width: 657px) {
 		display: none;
 	}
 }
