@@ -82,7 +82,7 @@ img {
 		position: fixed;
 		width: 100%;
 		.hamburguer {
-			top: 7px;
+			top: 10px;
 		}
 	}
 	@media (max-width: 480px) {
@@ -128,9 +128,16 @@ img {
 	width: 180px;
 	margin: 20px auto;
 	@media (max-width: 480px) {
-		width: 120px;
+		width: 140px;
 
 	}
+}
+
+.mobile-symbol {
+	width: 30px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 .simbolo {
@@ -144,6 +151,9 @@ img {
 	position: relative;
 	top: -60px;
 	align-self: baseline;
+	@media (max-width: 480px) {
+		top: -20px;
+	}
 }
 
 .phrases {
@@ -157,7 +167,7 @@ img {
 	}
 	
 	> div > h4 {
-		font-weight: 300;
+		font-weight: 700;
 		text-transform: uppercase;
 		font-size: 1.6em;
 		margin: 0;
@@ -169,9 +179,9 @@ img {
 			left: 0;
 			bottom: 0;
 			width: 10%;
-			height: 1px;
+			height: 2px;
 			background: #fff;
-			margin-top: 5px;
+			
 		}
 	}
 	@media (max-width: 480px) {
@@ -450,8 +460,8 @@ p.observacoes {
     -o-transition: .25s ease-in-out;
 		transition: .25s ease-in-out;
 		&:nth-child(1) { top: 0px; }
-		&:nth-child(2) { top: 10px; }
-		&:nth-child(3) { top: 20px; }
+		&:nth-child(2) { top: 8px; }
+		&:nth-child(3) { top: 16px; }
 	}
 
 	@media (min-width: 500px) {
