@@ -273,6 +273,19 @@ img {
 
 }
 
+.icon {
+	display: inline-block;
+	width: 24px;
+	height: 24px;
+	vertical-align: middle;
+	&.icon-sun {
+		background: url('/assets/images/sun.png') no-repeat center;
+		background-size: cover;
+		margin-right: 10px;
+		margin-bottom: 2px;
+	}
+}
+
 .arrow-bounce {
   position: absolute;
   bottom: 1.141em;
