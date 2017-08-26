@@ -84,8 +84,11 @@ img {
 		.hamburguer {
 			top: 10px;
 		}
-		.mobile-symbol {
-			display: inline-block;
+		
+		@media (max-width: 480px) {
+			.mobile-symbol {
+				display: inline-block;
+			}
 		}
 	}
 	@media (max-width: 480px) {
