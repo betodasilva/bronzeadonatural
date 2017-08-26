@@ -110,24 +110,10 @@
           <div class="col-xs-12 center-xs">
             <h2 class="title medium" style="margin-bottom: 1.414em;">Também estamos no instagram</h2>
           </div>
-          <div class="col-xs-6 col-sm-2">
-            <img src="http://via.placeholder.com/180x180" alt="">
+          <div id="instafeed" class="col-xs-12 instafeed" style="margin: 0;">
+
           </div>
-          <div class="col-xs-6 col-sm-2">
-            <img src="http://via.placeholder.com/180x180" alt="">
-          </div>
-          <div class="col-xs-6 col-sm-2">
-            <img src="http://via.placeholder.com/180x180" alt="">
-          </div>
-          <div class="col-xs-6 col-sm-2">
-            <img src="http://via.placeholder.com/180x180" alt="">
-          </div>
-          <div class="col-xs-6 col-sm-2">
-            <img src="http://via.placeholder.com/180x180" alt="">
-          </div>
-          <div class="col-xs-6 col-sm-2">
-            <img src="http://via.placeholder.com/180x180" alt="">
-          </div>
+           
         </section>
         <div class="hor-separator"></div>
         <section id="localizacao" class="location row">
@@ -177,6 +163,38 @@
       </div>
     </footer>
 
+      <script>
+         /* INSTAFEED */
+         $(function(){
+          var feed = new Instafeed({
+              get: 'user',
+              userId: '2976058694',
+              accessToken: '2976058694.75ee8ab.8e49d85c4ce34c46bd7ce0cb79c984cb',
+              after: function(){
+                setTimeout(function(){
+                  $('.instafeed').slick({
+                      slidesToShow: 7,
+                      slidesToScroll: 1,
+                      variableWidth: true,
+                      responsive: [
+                          {
+                              breakpoint: 480,
+                              settings: {
+                                  slidesToShow: 1,
+                                  slidesToScroll: 1,
+                              }
+                          }
+                      ]
+                  });
+                }
+                , 100);
+              }
+          });
+
+          feed.run();
+         });
+          
+      </script>
   </body>
 
 </html>
