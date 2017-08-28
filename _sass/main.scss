@@ -14,6 +14,11 @@ $grad2: #FC4A1A;
   font-family: 'FontAwesome', sans-serif;
 }
 
+.cursos-badge {
+	width: 120px;
+	margin-right: 20px;
+}
+
 *:focus {outline: none;}
 
 .icon-big {
@@ -204,9 +209,15 @@ img {
 	color: #fff;
 	z-index: 99;
 	margin-top: -5px;
-	>.text { color: #9dff1b; }
-	>.number { font-weight: 700; }
-	>.separator {
+	position: relative;
+	.fones {
+		display: inline-block;
+		position: relative;
+		top: 3px;
+	}
+	.text { color: #9dff1b; }
+	.number { font-weight: 700; }
+	.separator {
 		display: inline-block;
 		margin-left: 5px;
 		margin-right: 5px;
@@ -230,8 +241,19 @@ img {
 
 .icon-whatsapp {
 	background: url('/assets/images/whatsapp.png') no-repeat;
+	background-size: cover;
+	width: 18px;
+	height: 18px;
+	margin-left: 10px;
 	vertical-align: text-bottom;
 	
+}
+
+.whatsapp-text {
+	margin-top: -5px;
+	display: inline-block;
+	position: absolute;
+	top: 15px;
 }
 
 @media (max-width: 656px) {
