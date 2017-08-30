@@ -282,14 +282,17 @@ img {
 	.site-nav-open {
 		position: fixed;
 		top: 0; left: 0; right: 0; bottom: 0;
-		background: $orange;
+		background: #25abde;
 		z-index: 999;
 		.nav-links {
 			display: block;
+			font-weight: 700;
 		}
 		.mobile-symbol {
 			display: none !important;
 		}
+
+		.whatsapp { display: none; }
 		.hamburguer {
 			top: 20px;
 			> span {
