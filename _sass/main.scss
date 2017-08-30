@@ -36,6 +36,8 @@ h1, h2, h3, h4 {
   margin: 1.414em 0 0.5em;
   font-weight: inherit;
   line-height: 1.2;
+  font-family: 'Poppins', sans-serif;
+  
 }
 
 h1 {
@@ -52,7 +54,7 @@ h4 {font-size: 1.25em;}
 small, .font_small {font-size: 0.8em;}
 
 body {
-	font-family: 'Poppins', sans-serif;
+	font-family: 'Open Sans', sans-serif;
 	line-height: 1.45;
 	color: $text-color;
 }
@@ -83,20 +85,22 @@ img {
 	opacity: 1;
 	z-index: 100;
 	&.fixed {
-		background-color: #009cb0;
+		background-color: #25abde;
 		position: fixed;
 		width: 100%;
 		.hamburguer {
 			top: 10px;
 		}
 
-		.fones, .whatsapp-text { top: 15px; }
+		
 		
 		
 		@media (max-width: 760px) {
 			.mobile-symbol {
 				display: inline-block;
 			}
+
+			.fones, .whatsapp-text { top: 15px; }
 		}
 	}
 	@media (max-width: 760px) {
@@ -165,7 +169,7 @@ img {
 
 .phrases-container {
 	position: relative;
-	top: -60px;
+	top: -40px;
 	align-self: baseline;
 	@media (max-width: 480px) {
 		top: -20px;
@@ -268,7 +272,7 @@ img {
 }
 
 .whatsapp-text {
-	margin-top: -5px;
+	margin-top: -3px;
 	display: inline-block;
 	position: absolute;
 	top: 15px;
