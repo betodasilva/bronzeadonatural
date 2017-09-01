@@ -330,6 +330,8 @@ img {
 		> a { 
 			display: block;
 			text-align: center;
+			font-size: 18px;
+			line-height: 3;
 			&:after { display: none !important; }
 		}
 	}
@@ -557,3 +559,12 @@ p.observacoes {
 .contact {
 	padding-bottom: 3em;
 }
+
+
+.margin-mobile {
+	margin-bottom: 1em;
+	@media (max-width: 480px) {
+		margin-bottom: 2em;
+	}
+}
+
