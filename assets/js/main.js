@@ -93,11 +93,21 @@ $(function(){
         $('.popup-holder').remove();
     });
     
-    // setTimeout(showPopup, 10000);
+    setTimeout(showPopup, 12000);
+    setInterval(shakeTop, 4000);
     
 });
 
 function showPopup() {
     const popup = $('.popup-holder');
     popup.addClass('popup-active');
+}
+
+function shakeTop() {
+    const object = $('.icon-whatsapp');
+    object.removeClass('shake-top');
+    setTimeout(function(){
+        object.addClass('shake-top');
+    }, 2000);
+    
 }

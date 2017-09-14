@@ -277,10 +277,9 @@ img {
 }
 
 .whatsapp-text {
-	margin-top: -3px;
 	display: inline-block;
 	position: absolute;
-	top: 15px;
+	
 }
 
 @media (max-width: 656px) {
@@ -587,17 +586,19 @@ p.observacoes {
 	margin-left: -360px;
 
 	display: flex;
-	// visibility: hidden;
-	// opacity: 0;
+	visibility: hidden;
+	opacity: 0;
+	transform: scale(0.8);
 
 	justify-content: center;
 	align-items: center;
-	transition: all .2s ease-in-out;
+	transition: all 280ms ease-in-out;
 
 	&.popup-active {
 		// display: flex;
 		opacity: 1;
 		visibility: visible;
+		transform: scale(1);
 		
 	}
 	@media (max-width: 480px) {
@@ -692,3 +693,76 @@ p.observacoes {
 	}
 
 }
+
+.shake-top {
+	-webkit-animation: shake-top 0.8s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+	        animation: shake-top 0.8s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+}
+
+ @-webkit-keyframes shake-top {
+	0%,
+	100% {
+	  -webkit-transform: rotate(0deg);
+			  transform: rotate(0deg);
+	  -webkit-transform-origin: 50% 0;
+			  transform-origin: 50% 0;
+	}
+	10% {
+	  -webkit-transform: rotate(2deg);
+			  transform: rotate(2deg);
+	}
+	20%,
+	40%,
+	60% {
+	  -webkit-transform: rotate(-4deg);
+			  transform: rotate(-4deg);
+	}
+	30%,
+	50%,
+	70% {
+	  -webkit-transform: rotate(4deg);
+			  transform: rotate(4deg);
+	}
+	80% {
+	  -webkit-transform: rotate(-2deg);
+			  transform: rotate(-2deg);
+	}
+	90% {
+	  -webkit-transform: rotate(2deg);
+			  transform: rotate(2deg);
+	}
+  }
+  @keyframes shake-top {
+	0%,
+	100% {
+	  -webkit-transform: rotate(0deg);
+			  transform: rotate(0deg);
+	  -webkit-transform-origin: 50% 0;
+			  transform-origin: 50% 0;
+	}
+	10% {
+	  -webkit-transform: rotate(2deg);
+			  transform: rotate(2deg);
+	}
+	20%,
+	40%,
+	60% {
+	  -webkit-transform: rotate(-4deg);
+			  transform: rotate(-4deg);
+	}
+	30%,
+	50%,
+	70% {
+	  -webkit-transform: rotate(4deg);
+			  transform: rotate(4deg);
+	}
+	80% {
+	  -webkit-transform: rotate(-2deg);
+			  transform: rotate(-2deg);
+	}
+	90% {
+	  -webkit-transform: rotate(2deg);
+			  transform: rotate(2deg);
+	}
+  }
+  
