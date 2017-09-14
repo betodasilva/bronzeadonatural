@@ -25,6 +25,11 @@ $grad2: #FC4A1A;
 	color: $orange;
 	margin-right: 5px;
 }
+
+.subcolor {
+	color: #848484;
+}
+
 @media (max-width: 480px) {
 	.row { margin-left: 0 !important; margin-right: 0 !important; }
 }
@@ -223,7 +228,7 @@ img {
 		position: relative;
 		top: 3px;
 	}
-	.text { color: #9dff1b; }
+	.text { color: #9dff1b; font-weight: 700; }
 	.number { font-weight: 700; }
 	.separator {
 		display: inline-block;
@@ -262,7 +267,7 @@ img {
 }
 
 .icon-whatsapp {
-	background: url('/assets/images/whatsapp.png') no-repeat;
+	background: url('/assets/images/whatsapp.svg') no-repeat;
 	background-size: cover;
 	width: 18px;
 	height: 18px;
@@ -568,3 +573,122 @@ p.observacoes {
 	}
 }
 
+
+.popup-holder {
+	background: #ffa119;
+	max-width: 100%;
+	width: 720px;
+	height: 400px;
+	position: fixed;
+	z-index: 999;
+	top: 50%;
+	left: 50%;
+	margin-top: -200px;
+	margin-left: -360px;
+
+	display: flex;
+	// visibility: hidden;
+	// opacity: 0;
+
+	justify-content: center;
+	align-items: center;
+	transition: all .2s ease-in-out;
+
+	&.popup-active {
+		// display: flex;
+		opacity: 1;
+		visibility: visible;
+		
+	}
+	@media (max-width: 480px) {
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		width: 100%;
+		height: 100%;
+		margin: 0;
+	}
+}
+
+.popup-closer {
+	color: #fff;
+    font: 42px/100% sans-serif;
+    position: absolute;
+    right: 18px;
+    text-decoration: none;
+	top: 8px;
+	cursor: pointer;
+	&:after {
+		content: '×';
+	}
+}
+
+.popup-content {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	align-items: baseline;
+	border: 1px solid #fff;
+	padding: 2em 3em;
+	width: 700px;
+	height: calc(100% - 20px);
+	color: #FFF;
+}
+
+.popup-header {
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	margin-bottom: 1em;
+
+	>.img {
+		width: 42px;
+		height: 42px;
+	}
+
+	>.title {
+		margin: 0 0 0 10px;
+		font-weight: 700;
+		text-shadow: 1px 1px 0px rgba(0,0,0, 0.4);
+	}
+}
+
+.popup-paragraph {
+	width: 100%;
+	font-size: 20px;
+	text-align: center;
+	margin-top: auto;
+	margin-bottom: auto;
+	> p {
+		text-shadow: 0 1px 0px rgba(0,0,0, 0.3);
+		font-weight: 700;
+	}
+
+	.p-big {
+		font-size: 32px;
+		
+	}
+}
+
+
+.popup-cta {
+	margin-top: auto;
+	display: flex;
+	justify-content: space-between;
+	font-weight: 700;
+	width: 100%;
+	
+	> a {
+		display: block;
+		width: 300px;
+		max-width: 100%;
+		line-height: 2.5;
+		text-align: center;
+		border: 1px solid #fff;
+		color: #fff;
+		margin: 0 auto;
+		&:hover { background: #fff; color: $orange;}
+	}
+
+}
