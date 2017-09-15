@@ -14,7 +14,6 @@
     <p>
     Tire um print desta tela, apresente e ganhe<br>
     <span class="p-big">R$60,00 de Desconto </span><br>
-    <span>Válido até 20/10</span>
     </p>
 </div>
 
