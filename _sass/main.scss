@@ -683,6 +683,10 @@ p.observacoes {
 		height: 80px;
 		fill: #fff;
 		margin: 0 auto;
+		@media (max-width: 480px) {
+			width: 60px;
+			height: 60px;
+		}
 	}
 	
 	// > a {
