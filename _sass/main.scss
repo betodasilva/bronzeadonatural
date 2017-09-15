@@ -189,29 +189,22 @@ img {
 		flex: 1 0 50%;
 		height: 50px;
 		color: #fff;
+		@media(max-width:480px) {
+			margin-bottom: 1.2em;
+		}
 	}
 	
 	> div > h4 {
-		font-weight: 700;
-		text-transform: uppercase;
-		font-size: 1.6em;
+		// font-weight: 700;
+		// text-transform: uppercase;
+		font-size: 2em;
 		margin: 0;
 		position: relative;
-		&:before {
-			content: '';
-			display: block;
-			position: absolute;
-			left: 0;
-			bottom: 0;
-			width: 10%;
-			height: 2px;
-			background: #fff;
-			
-		}
+		font-family: 'Open Sans', sans-serif;
 	}
 	@media (max-width: 480px) {
 		> div > h4 {
-			font-size: 1em;
+			font-size: 1.3em;
 			&:before { display: none !important;}
 		}
 	}
@@ -229,7 +222,12 @@ img {
 		top: 3px;
 	}
 	.text { color: #9dff1b; font-weight: 700; }
-	.number { font-weight: 700; }
+	.number { 
+		font-weight: 700; 
+		@media (max-width: 480px) {
+			font-size: 1.2em;
+		}
+	}
 	.separator {
 		display: inline-block;
 		margin-left: 5px;
@@ -652,6 +650,7 @@ p.observacoes {
 		margin: 0 0 0 10px;
 		font-weight: 700;
 		text-shadow: 1px 1px 0px rgba(0,0,0, 0.4);
+		text-align: center;
 	}
 }
 
@@ -659,7 +658,6 @@ p.observacoes {
 	width: 100%;
 	font-size: 20px;
 	text-align: center;
-	margin-top: auto;
 	margin-bottom: auto;
 	> p {
 		text-shadow: 0 1px 0px rgba(0,0,0, 0.3);
@@ -679,18 +677,25 @@ p.observacoes {
 	justify-content: space-between;
 	font-weight: 700;
 	width: 100%;
-	
-	> a {
-		display: block;
-		width: 300px;
-		max-width: 100%;
-		line-height: 2.5;
-		text-align: center;
-		border: 1px solid #fff;
-		color: #fff;
+
+	> svg {
+		width: 80px;
+		height: 80px;
+		fill: #fff;
 		margin: 0 auto;
-		&:hover { background: #fff; color: $orange;}
 	}
+	
+	// > a {
+	// 	display: block;
+	// 	width: 300px;
+	// 	max-width: 100%;
+	// 	line-height: 2.5;
+	// 	text-align: center;
+	// 	border: 1px solid #fff;
+	// 	color: #fff;
+	// 	margin: 0 auto;
+	// 	&:hover { background: #fff; color: $orange;}
+	// }
 
 }
 
