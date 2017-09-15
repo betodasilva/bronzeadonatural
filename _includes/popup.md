@@ -15,6 +15,11 @@
     Tire um print desta tela, apresente e ganhe<br>
     <span class="p-big">R$60,00 de Desconto </span><br>
     </p>
+    <div>
+    Pode ser usado 3 vezes por cada cliente.
+    <br>
+    Válido para sessões até 30/10
+    </div>
 </div>
 
 </div>
