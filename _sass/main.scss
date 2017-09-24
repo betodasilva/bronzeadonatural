@@ -246,7 +246,7 @@ img {
 			// position: relative;
 			// top: 22px;
 			.text {display: none;}
-			.icon-whatsapp { width: 16px; height: 16px; margin: -2px 0 0 2px;}
+			.icon-whatsapp { margin: -2px 0 0 2px;}
 		}
 	}
 }
@@ -256,17 +256,22 @@ img {
 	width: 24px;
 	height: 24px;
 	vertical-align: middle;
+	&.icon-whatsapp {
+		background: url('/assets/images/whatsapp.svg') no-repeat;
+		background-size: cover;
+		margin-left: 10px;
+		@media (min-width: 768px) {
+			width: 32px;
+			height: 32px;
+			
+		}
+		
+	}
 }
 
-.icon-whatsapp {
-	background: url('/assets/images/whatsapp.svg') no-repeat;
-	background-size: cover;
-	width: 18px;
-	height: 18px;
-	margin-left: 10px;
-	vertical-align: text-bottom;
-	
-}
+
+
+
 
 .whatsapp-text {
 	display: inline-block;
