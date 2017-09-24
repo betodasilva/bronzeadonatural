@@ -5,10 +5,27 @@
 
   <body>
     
-
+    <div class="main-wrapper">
+    
+    <aside class="sidebar">
+      <div class="sidebar-closer"></div>
+      <div class="sidebar-content row">
+        <div class="col-xs-12 sidebar-logo center-xs">
+         <img src="/assets/images/simbolo-branco.png" width="90">
+        </div>
+          <div class="nav-links col-xs center-xs">
+              <a href="#hero">Início</a>
+              <a href="#quem-somos">Quem Somos</a>
+              <a href="#como-funciona">Como Funciona?</a>
+              <a href="#galeria">Galeria</a>
+              <a href="#localizacao">Mapa</a>
+              <a href="#contato">Contato</a>
+          </div>
+      </div>
+    </aside>
     <main class="page-content" aria-label="Content">
       
-      <section class="hero">
+      <section id="hero" class="hero">
           {% include header.html %}
           <div class="hero-wrapper row center-xs">
             <div class="col-xs-12" style="z-index: 99; align-self: baseline;">
@@ -18,7 +35,7 @@
 
             </div>
             
-            <div class="col-xs-12 col-md-8 col-md-offset-1 start-md phrases-container">
+            <div class="col-xs-12 col-md-11 col-md-offset-1 col-lg-8 start-md phrases-container">
               <div class="phrases">
                 <div><h4>Marquinhas Perfeitas</h4></div>
                 <div><h4>Resultado Duradouro</h4></div>
@@ -29,6 +46,8 @@
             <a href="#quem-somos" class="arrow-bounce bounce"></a>
           </div>     
       </section>
+
+      
       
       <div class="container">
         <section id="quem-somos" class="row center-xs section-margin">
@@ -178,6 +197,8 @@
         <p>Bronzeado Natural 2015 ~ 2017<br>Todos os direitos reservados.</p>
       </div>
     </footer>
+
+  </div> <!-- /.wrapper -->
 
       <script>
          /* INSTAFEED */

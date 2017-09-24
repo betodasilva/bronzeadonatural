@@ -51,18 +51,18 @@ $(function(){
     });
 
      /* NAV */
-    var btn = $('#nav-btn'),
-        nav = $('.site-nav'),
-        links = $('.nav-links a');
+    // var btn = $('#nav-btn'),
+    //     nav = $('.site-nav'),
+    //     links = $('.nav-links a');
 
 
-    btn.click(function(){
-        nav.toggleClass('site-nav-open');
-    });
+    // btn.click(function(){
+    //     nav.toggleClass('site-nav-open');
+    // });
 
-    links.click(function(){
-        nav.toggleClass('site-nav-open');
-    });
+    // links.click(function(){
+    //     nav.toggleClass('site-nav-open');
+    // });
 
     /* GALLERY SLIDE */
     $('.gallery-photos').slick({
@@ -95,6 +95,26 @@ $(function(){
     
     setTimeout(showPopup, 12000);
     setInterval(shakeTop, 4000);
+
+
+    /* SIDEBAR */
+    const hamburguerDesk = $('.hamburguer-wrapper'),
+          sidebar = $('.sidebar'),
+          closeSideBar = $('.sidebar-closer'),
+          siteContent = $('.page-content');
+
+    var toggleSideBar = function(){
+        sidebar.toggleClass('sidebar-open');
+        siteContent.toggleClass('fade-content');
+    }
+
+   
+
+    hamburguerDesk.on('click', toggleSideBar);
+    closeSideBar.on('click', toggleSideBar);
+    $('.nav-links').on('click', 'a', toggleSideBar);
+
+    
     
 });
 
