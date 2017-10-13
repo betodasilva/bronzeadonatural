@@ -32,6 +32,8 @@ gems:
 exclude:
   - Gemfile
   - Gemfile.lock
+include: 
+  - _redirects
 
 
 collections: 
